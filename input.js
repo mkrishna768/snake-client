@@ -14,19 +14,22 @@ const handleUserInput = function(key) {
   }
   switch (key) {
   case "w":
-    connection.write("Move: up")
+    connection.write("Move: up");
     break;
   case "a":
-    connection.write("Move: left")
+    connection.write("Move: left");
     break;
 
   case "s":
-    connection.write("Move: down")
+    connection.write("Move: down");
     break;
 
   case "d":
-    connection.write("Move: right")
+    connection.write("Move: right");
     break;
+  case "/":
+    let message = "hello";
+    connection.write(`Say: ${message}`);
   default:
     break;
   }
